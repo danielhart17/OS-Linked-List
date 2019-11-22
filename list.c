@@ -174,16 +174,16 @@ elem list_get_elem_at(list_t *l, int index) {
 
 // Return index of certain element in list
 int list_get_index_of(list_t *l, elem value) {
-	int counter = 0;
+	int count = 0;
 	node_t *current_node = l->head;
     while (current_node->next != NULL)
     {
 		if (current_node->value == value){
-			return counter;
+			return count;
 		} else {
-			counter++;
+			count++;
 			current_node = current_node->next;
 		}
     }
-	return counter;
+	return count;
 }
