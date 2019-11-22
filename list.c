@@ -146,7 +146,7 @@ elem list_remove_at_index(list_t *l, int index) {
 bool list_is_in(list_t *l, elem value) {
 	bool valIsIn;
     node_t *current_node = l->head;
-    while (current_node->next != NULL && !exist)
+    while (current_node->next != NULL && !valIsIn)
     {
 		if (current_node->value == value){
 			valIsIn = true;
